@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Header{
+    height: 75px;
+    background: #111844;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.Logo{
+    height: 70px;
+    border-radius: 89px;
+    padding: 5px 15px;
+}
+h1{
+    color: #C13383;
+    font-family: "Bitcount Single";
+}
+.Herosegment{
+    text-align: center;
+    padding: 80px 20px;
+}
+.Herosegment h1{
+    color: #792CA2;
+    font-family: "Bitcount Single";
+    font-size: 55px;
+}
+.Herosegment p{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Semlist h3{
+    font-size: 29px;
+ font-family:'Bitcount Single' ;
+ padding-left: 40px;
+ color: brown;
+}
+.Semlist{
+    gap: 15px;
+    padding: 15px 0px;
+    padding-bottom: 160px;
+}
+.Semlist summary{
+      
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 1375px;
+    margin: 15px 40px;
+    font-weight: bold;;
+}
+.Semlist summary:hover{
+    border: 2px solid grey;
+}
+
+.sembox{
+    background: #111844;
+    margin: 15px 40px;
+    padding: 1px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.ul1{
+margin-left: 45px;
+padding:10px 0px;
+text-decoration: none;
+
+}
+.ul1 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue ;
+    justify-content: space-between;
+    gap: 25px;
+    
+
+}
+.Cont{
+    background-color: #111844;
+    height: 220px;   
+   
+}
+.Mcont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 65px;
+}
+.Cont p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+
+}
+.Contimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0px;
+}
