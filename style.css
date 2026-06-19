@@ -1,107 +1,231 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.Header{
+
+/* ===== NAVBAR ===== */
+.Header {
     height: 75px;
     background: #111844;
     display: flex;
     align-items: center;
     gap: 15px;
+    padding: 0 10px;
 }
-.Logo{
-    height: 70px;
+
+.Logo {
+    height: 60px;
     border-radius: 89px;
-    padding: 5px 15px;
+    padding: 5px 10px;
 }
-h1{
+
+h1 {
     color: #C13383;
     font-family: "Bitcount Single";
 }
-.Herosegment{
+
+/* ===== HERO SECTION ===== */
+.Herosegment {
     text-align: center;
     padding: 80px 20px;
 }
-.Herosegment h1{
+
+.Herosegment h1 {
     color: #792CA2;
     font-family: "Bitcount Single";
     font-size: 55px;
 }
-.Herosegment p{
+
+.Herosegment p {
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.Semlist h3{
+
+/* ===== SEMESTER LIST ===== */
+.Semlist h3 {
     font-size: 29px;
- font-family:'Bitcount Single' ;
- padding-left: 40px;
- color: brown;
+    font-family: 'Bitcount Single';
+    padding-left: 40px;
+    color: brown;
 }
-.Semlist{
+
+.Semlist {
     gap: 15px;
     padding: 15px 0px;
-    padding-bottom: 160px;
+    padding-bottom: 60px;
 }
-.Semlist summary{
-      
+
+/* FIX: Removed fixed width: 1375px — was the main mobile bug */
+.Semlist summary {
     color: white;
     padding: 12px 20px;
     cursor: pointer;
     border-radius: 8px;
-    width: 1375px;
-    margin: 15px 40px;
-    font-weight: bold;;
+    width: 100%;        /* ✅ was 1375px — now fills container */
+    font-weight: bold;
 }
-.Semlist summary:hover{
+
+.Semlist summary:hover {
     border: 2px solid grey;
 }
 
-.sembox{
+/* FIX: sembox now uses percentage margin */
+.sembox {
     background: #111844;
-    margin: 15px 40px;
+    margin: 15px 40px;   /* desktop margin */
     padding: 1px;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
-.ul1{
-margin-left: 45px;
-padding:10px 0px;
-text-decoration: none;
 
+.ul1 {
+    margin-left: 45px;
+    padding: 10px 0px;
+    text-decoration: none;
 }
-.ul1 a{
+
+.ul1 a {
     text-decoration: none;
     font-size: 20px;
-    color: aliceblue ;
+    color: aliceblue;
     justify-content: space-between;
     gap: 25px;
-    
+}
 
-}
-.Cont{
+/* ===== FOOTER ===== */
+.Cont {
     background-color: #111844;
-    height: 220px;   
-   
+    min-height: 220px;   /* ✅ min-height instead of fixed height */
+    padding-bottom: 20px;
 }
-.Mcont{
+
+.Mcont {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 65px;
+    padding-top: 40px;
+    gap: 8px;
 }
-.Cont p{
+
+.Cont p {
     color: white;
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-text-align: center;
-
+    text-align: center;
 }
-.Contimg{
+
+.Contimg {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding: 10px 0px;
+}
+
+/* ===================================================
+   MOBILE RESPONSIVE FIXES (max-width: 768px)
+   =================================================== */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .Header {
+        height: auto;
+        padding: 10px 12px;
+        gap: 10px;
+    }
+
+    .Logo {
+        height: 45px;
+        padding: 3px 6px;
+    }
+
+    .Header h1 {
+        font-size: 1.3rem;
+    }
+
+    /* Hero Section */
+    .Herosegment {
+        padding: 40px 15px;
+    }
+
+    .Herosegment h1 {
+        font-size: 2rem;   /* was 55px — too big on mobile */
+    }
+
+    .Herosegment p {
+        font-size: 0.9rem;
+    }
+
+    /* Semester section heading */
+    .Semlist h3 {
+        font-size: 1.3rem;
+        padding-left: 15px;
+    }
+
+    .Semlist {
+        padding-bottom: 40px;
+    }
+
+    /* Semester boxes */
+    .sembox {
+        margin: 10px 12px;   /* tight side margins on phone */
+    }
+
+    .Semlist summary {
+        padding: 12px 14px;
+        font-size: 0.95rem;
+    }
+
+    /* Links inside expanded semester */
+    .ul1 {
+        margin-left: 20px;
+        padding: 8px 0;
+    }
+
+    .ul1 a {
+        font-size: 0.95rem;
+        line-height: 2;     /* more tap-friendly spacing */
+    }
+
+    /* Footer */
+    .Cont {
+        min-height: auto;
+        padding: 30px 15px 20px;
+    }
+
+    .Mcont {
+        padding-top: 10px;
+    }
+
+    .Cont p {
+        font-size: 14px;
+    }
+
+    .Contimg img {
+        width: 38px !important;
+    }
+}
+
+/* ===================================================
+   SMALL PHONES (max-width: 400px)
+   =================================================== */
+@media (max-width: 400px) {
+
+    .Header h1 {
+        font-size: 1.1rem;
+    }
+
+    .Herosegment h1 {
+        font-size: 1.6rem;
+    }
+
+    .sembox {
+        margin: 8px 8px;
+    }
+
+    .ul1 a {
+        font-size: 0.85rem;
+    }
 }
