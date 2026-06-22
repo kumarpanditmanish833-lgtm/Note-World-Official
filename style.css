@@ -62,7 +62,7 @@ h1 {
     padding: 12px 20px;
     cursor: pointer;
     border-radius: 8px;
-    width: 100%;        /* ✅ was 1375px — now fills container */
+    width: 100%;        
     font-weight: bold;
 }
 
@@ -73,7 +73,7 @@ h1 {
 /* FIX: sembox now uses percentage margin */
 .sembox {
     background: #111844;
-    margin: 15px 40px;   /* desktop margin */
+    margin: 15px 40px;   
     padding: 1px;
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -82,9 +82,6 @@ h1 {
 .ul1 {
     margin-left: 45px;
     padding: 10px 0px;
-    text-decoration: none;
-}
-.ul1 li{
     text-decoration: none;
 }
 
@@ -99,7 +96,7 @@ h1 {
 /* ===== FOOTER ===== */
 .Cont {
     background-color: #111844;
-    min-height: 220px;   /* ✅ min-height instead of fixed height */
+    min-height: 220px;   
     padding-bottom: 20px;
 }
 
@@ -127,9 +124,7 @@ h1 {
     padding: 10px 0px;
 }
 
-/* ===================================================
-   MOBILE RESPONSIVE FIXES (max-width: 768px)
-   =================================================== */
+
 @media (max-width: 768px) {
 
     /* Navbar */
@@ -154,7 +149,7 @@ h1 {
     }
 
     .Herosegment h1 {
-        font-size: 2rem;   /* was 55px — too big on mobile */
+        font-size: 2rem;  
     }
 
     .Herosegment p {
@@ -173,7 +168,7 @@ h1 {
 
     /* Semester boxes */
     .sembox {
-        margin: 10px 12px;   /* tight side margins on phone */
+        margin: 10px 12px;   
     }
 
     .Semlist summary {
@@ -189,7 +184,7 @@ h1 {
 
     .ul1 a {
         font-size: 0.95rem;
-        line-height: 2;     /* more tap-friendly spacing */
+        line-height: 2;     
     }
 
     /* Footer */
@@ -211,9 +206,7 @@ h1 {
     }
 }
 
-/* ===================================================
-   SMALL PHONES (max-width: 400px)
-   =================================================== */
+
 @media (max-width: 400px) {
 
     .Header h1 {
