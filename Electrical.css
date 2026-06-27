@@ -247,67 +247,10 @@ h1 {
     transition: border-color .3s, box-shadow .3s;
     overflow: hidden;
 }
-.sembox a{
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-}
 
 .sembox:hover {
     border-color: rgba(124, 58, 237, .5);
     box-shadow: 0 0 28px rgba(124, 58, 237, .15);
-}
-/* ===== CARD LINK (entire clickable area) ===== */
-.sembox-link {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    color: var(--white);
-    padding: 16px 22px;
-    width: 100%;
-    text-decoration: none;
-    border-radius: 16px;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
-    transition: background .2s;
-    position: relative;
-}
-
-.sembox-link:hover {
-    background: rgba(124, 58, 237, .07);
-}
-
-/* Branch number badge */
-.sembox-link::before {
-    content: attr(data-num);
-    width: 36px;
-    height: 36px;
-    border-radius: 9px;
-    background: linear-gradient(135deg, var(--violet), var(--violet2));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff;
-    flex-shrink: 0;
-    box-shadow: 0 4px 14px rgba(124, 58, 237, .35);
-}
-
-/* Arrow indicator */
-.sembox-link::after {
-    content: '▾';
-    margin-left: auto;
-    color: var(--muted);
-    font-size: 18px;
-    transform: rotate(-90deg);
-    transition: transform .3s, color .3s;
-}
-
-.sembox-link:hover::after {
-    color: var(--violet2);
-    transform: rotate(0deg);
 }
 
 /* ===== SUMMARY (accordion header) ===== */
